@@ -1,18 +1,21 @@
 package jkl4o4.noteapp.note.presentation
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import jkl4o4.noteapp.R
+import jkl4o4.noteapp.main.presentation.BaseFragment
 
-class NotesFragment : Fragment() {
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_notes, container, false)
+class NotesFragment : BaseFragment<NotesViewModel.Base>() {
+    override val layoutId = R.layout.fragment_notes
+    override val viewModelClass = NotesViewModel.Base::class.java
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val createNewNote = view.findViewById<FloatingActionButton>(R.id.createNewNoteButton)
+        createNewNote.setOnClickListener {
+            viewModel.showNoteDetails("")
+        }
     }
+
 }
