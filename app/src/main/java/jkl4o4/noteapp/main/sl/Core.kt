@@ -9,10 +9,8 @@ interface Core : ProvideNavigation {
         private val navigationCommunication = NavigationCommunication.Base()
 
         override fun provideNavigation() = navigationCommunication
-
     }
 }
-
 
 interface ProvideNavigation {
     fun provideNavigation(): NavigationCommunication.Mutable

@@ -7,13 +7,13 @@ import jkl4o4.noteapp.main.presentation.Screen
 
 interface NotesViewModel {
 
-    fun showNoteDetails(item: String)
+    fun showNoteDetails(item: NoteUi)
 
     class Base(
         private val navigationCommunication: NavigationCommunication.Mutate
     ) : ViewModel(), NotesViewModel {
 
-        override fun showNoteDetails(item: String) {
+        override fun showNoteDetails(item: NoteUi) {
             navigationCommunication.map((NavigationStrategy.Add(Screen.NoteDetails)))
         }
 
