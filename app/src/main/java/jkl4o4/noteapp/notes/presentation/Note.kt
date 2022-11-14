@@ -1,4 +1,4 @@
-package jkl4o4.noteapp.note.presentation
+package jkl4o4.noteapp.notes.presentation
 
 import jkl4o4.noteapp.main.presentation.Mapper
 

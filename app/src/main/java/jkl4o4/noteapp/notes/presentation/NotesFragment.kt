@@ -1,4 +1,4 @@
-package jkl4o4.noteapp.note.presentation
+package jkl4o4.noteapp.notes.presentation
 
 import android.os.Bundle
 import android.view.View

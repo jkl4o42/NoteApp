@@ -1,4 +1,4 @@
-package jkl4o4.noteapp.note.presentation
+package jkl4o4.noteapp.notes.presentation
 
 import androidx.lifecycle.ViewModel
 import jkl4o4.noteapp.main.presentation.NavigationCommunication

@@ -4,8 +4,8 @@ import androidx.lifecycle.ViewModel
 import jkl4o4.noteapp.details.presentation.NoteDetailsViewModel
 import jkl4o4.noteapp.details.sl.NoteDetailsModule
 import jkl4o4.noteapp.main.presentation.MainViewModel
-import jkl4o4.noteapp.note.presentation.NotesViewModel
-import jkl4o4.noteapp.note.sl.NotesModule
+import jkl4o4.noteapp.notes.presentation.NotesViewModel
+import jkl4o4.noteapp.notes.sl.NotesModule
 
 interface DependencyContainer {
     fun <T : ViewModel> module(clasz: Class<T>): Module<*>

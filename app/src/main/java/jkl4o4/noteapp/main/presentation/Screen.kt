@@ -1,7 +1,7 @@
 package jkl4o4.noteapp.main.presentation
 
 import jkl4o4.noteapp.details.presentation.NoteDetailsFragment
-import jkl4o4.noteapp.note.presentation.NotesFragment
+import jkl4o4.noteapp.notes.presentation.NotesFragment
 
 sealed class Screen {
 
